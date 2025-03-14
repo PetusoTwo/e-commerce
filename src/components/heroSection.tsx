@@ -5,7 +5,7 @@ import logo from '@/assets/logo.png';
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full pt-20 bg-gradient-to-b from-purple-600/5 to-indigo-600/5">
+    <div className="relative  w-full pt-20 bg-gradient-to-b from-purple-600/5 to-indigo-600/5">
       {/* Fondo con efectos */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/5 bg-[length:20px_20px] [mask-image:radial-gradient(white,transparent_85%)]" />
