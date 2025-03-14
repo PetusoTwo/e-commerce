@@ -14,6 +14,7 @@ import {
   HeartIcon,
 } from '@heroicons/react/24/outline';
 import { StarIcon } from '@heroicons/react/24/solid';
+import { StaticImageData } from 'next/image';
 
 // Tipos
 interface Product {
@@ -21,7 +22,7 @@ interface Product {
   name: string;
   price: number;
   rating: number;
-  image: string;
+  image: StaticImageData;
   category: string;
   brand: string;
   stock: number;
@@ -302,41 +303,44 @@ const ProductsPage = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="bg-gray-800/30 rounded-2xl overflow-hidden border border-gray-700/50
-                    hover:border-purple-500/30 transition-all duration-300 group"
+                    hover:border-purple-500/30 transition-all duration-300 group flex flex-col h-full"
                 >
                   <div className="aspect-[4/3] relative overflow-hidden bg-gray-900/50">
                     <Image
                       src={product.image}
                       alt={product.name}
-                      fill
-                      className="object-contain p-4 group-hover:scale-110 transition-transform duration-300"
+                      width={400}
+                      height={300}
+                      className="object-contain w-full h-full p-4 group-hover:scale-110 transition-transform duration-300"
                     />
-                    {product.discount && (
-                      <span className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded-lg text-sm">
-                        -{product.discount}%
-                      </span>
-                    )}
-                    {product.stock < 5 && (
-                      <span className="absolute top-2 right-2 bg-amber-500 text-white px-2 py-1 rounded-lg text-sm">
-                        ¡Últimas unidades!
-                      </span>
-                    )}
+                    <div className="absolute top-2 left-2 flex flex-col gap-2">
+                      {product.discount && (
+                        <span className="bg-red-500 text-white px-2 py-1 rounded-lg text-sm font-medium">
+                          -{product.discount}%
+                        </span>
+                      )}
+                      {product.stock < 5 && (
+                        <span className="bg-amber-500 text-white px-2 py-1 rounded-lg text-sm font-medium">
+                          ¡Últimas unidades!
+                        </span>
+                      )}
+                    </div>
                     <button className="absolute bottom-2 right-2 p-2 bg-gray-900/80 rounded-full
                       opacity-0 group-hover:opacity-100 transition-opacity duration-300
                       hover:bg-purple-600">
                       <HeartIcon className="h-5 w-5 text-white" />
                     </button>
                   </div>
-                  <div className="p-6">
+                  <div className="p-6 flex  flex-col flex-grow">
                     <div className="flex items-start justify-between gap-4 mb-2">
-                      <h3 className="text-white font-semibold text-lg leading-tight">
+                      <h3 className="text-white font-semibold text-lg leading-tight line-clamp-2 flex-grow">
                         {product.name}
                       </h3>
-                      <span className="bg-purple-500/10 text-purple-400 px-2 py-1 rounded text-sm">
+                      <span className="bg-purple-500/10 text-purple-400 px-2 py-1 rounded text-sm whitespace-nowrap">
                         {product.category}
                       </span>
                     </div>
-                    <p className="text-gray-400 text-sm mb-4 line-clamp-2">
+                    <p className="text-gray-400 text-sm mb-4 line-clamp-2 flex-grow">
                       {product.description}
                     </p>
                     <div className="flex items-center gap-2 mb-4">
@@ -353,22 +357,11 @@ const ProductsPage = () => {
                       <span className="text-gray-400">({product.rating})</span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <div>
-                        {product.discount ? (
-                          <>
-                            <span className="text-2xl font-bold text-white">
-                              ${(product.price * (1 - product.discount / 100)).toFixed(2)}
-                            </span>
-                            <span className="ml-2 text-sm text-gray-400 line-through">
-                              ${product.price}
-                            </span>
-                          </>
-                        ) : (
+
                           <span className="text-2xl font-bold text-white">
                             ${product.price}
                           </span>
-                        )}
-                      </div>
+
                       <button className="bg-purple-600 text-white px-4 py-2 rounded-xl
                         hover:bg-purple-700 transition-colors duration-300 flex items-center gap-2">
                         <ShoppingCartIcon className="h-5 w-5" />
