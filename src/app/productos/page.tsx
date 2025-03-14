@@ -193,7 +193,7 @@ const ProductsPage = () => {
   return (
     <div className="min-h-screen bg-gray-900">
       {/* Header de la página */}
-      <div className="bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 py-16">
+      <div className="bg-gradient-to-r from-gray-900 via-purple-900 to-gray-900 py-16 pt-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-4xl font-bold text-white text-center mb-6">
             Nuestros Productos

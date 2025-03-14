@@ -10,6 +10,8 @@ import {
 } from '@heroicons/react/24/outline';
 import logo from '@/assets/logo.png';
 import Image from 'next/image';
+import Link from 'next/link';
+
 const Navbar: React.FC = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
@@ -60,9 +62,11 @@ const Navbar: React.FC = () => {
 
               {/* Iconos de usuario y carrito */}
               <div className="flex items-center space-x-4">
-                <button className="p-2.5 text-white/90 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300">
-                  <UserIcon className="h-6 w-6" />
-                </button>
+                <Link href="/login">
+                  <button className="p-2.5 text-white/90 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300">
+                    <UserIcon className="h-6 w-6" />
+                  </button>
+                </Link>
                 <button className="p-2.5 text-white/90 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 relative">
                   <ShoppingCartIcon className="h-6 w-6" />
                   <span className="absolute -top-1 -right-1 px-2 py-1 text-xs font-bold text-white bg-pink-500 rounded-full transform scale-100 hover:scale-110 transition-transform duration-300">
