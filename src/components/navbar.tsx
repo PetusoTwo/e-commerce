@@ -67,12 +67,14 @@ const Navbar: React.FC = () => {
                     <UserIcon className="h-6 w-6" />
                   </button>
                 </Link>
+                <Link href="/carrito">
                 <button className="p-2.5 text-white/90 hover:text-white hover:bg-white/10 rounded-full transition-all duration-300 relative">
                   <ShoppingCartIcon className="h-6 w-6" />
                   <span className="absolute -top-1 -right-1 px-2 py-1 text-xs font-bold text-white bg-pink-500 rounded-full transform scale-100 hover:scale-110 transition-transform duration-300">
                     0
                   </span>
                 </button>
+                </Link>
                 {/* Botón de menú móvil */}
                 <div className="md:hidden flex items-center">
                   <Disclosure.Button className="inline-flex items-center justify-center p-2.5 rounded-full text-white/90 hover:text-white hover:bg-white/10 transition-all duration-300">
