@@ -1,3 +1,99 @@
+E-Commerce con Next.js y Tailwind CSS
+
+Proyecto de e-commerce desarrollado con Next.js y Tailwind CSS. Su propósito es proporcionar una plataforma moderna, rápida y responsive para vender productos en línea.
+
+🚀 Tecnologías Utilizadas
+
+Next.js - Framework de React para aplicaciones web optimizadas.
+Tailwind CSS - Framework de estilos para un diseño flexible y modular.
+TypeScript - Tipado estático para mejorar la mantenibilidad.
+Firebase / Supabase (opcional) - Autenticación y base de datos en la nube (Aún no cuenta con Base de datos).
+
+📂 Estructura del Proyecto
+
+E-COMMERCE/
+│-- public/
+│   ├── favicon.ico
+│-- src/
+│   ├── app/
+│   │   ├── carrito/
+│   │   ├── login/
+│   │   ├── productos/
+│   │   ├── registro/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   ├── assets/
+│   ├── components/
+│-- .gitignore
+│-- README.md
+│-- package.json
+│-- tsconfig.json
+
+🛠 Instalación y Configuración
+
+Clonar el repositorio
+```bash
+git clone https://github.com/PetusoTwo/ecommerce-project.git
+cd ecommerce-project
+```
+
+Instalar dependencias
+```bash
+npm install  # o yarn install
+```
+Ejecutar el entorno de desarrollo
+```bash
+npm run dev  # o yarn dev
+```
+
+📸 Capturas de Pantalla
+
+Demostracion del proyecto.
+#Pagina Principal:
+
+![image](https://github.com/user-attachments/assets/7d042473-fa68-4bdf-a2d2-e847ab25c158)
+
+#Productos destacados:
+
+![image](https://github.com/user-attachments/assets/f2b7fe44-e0f2-4e88-b45d-c6d917448c5d)
+
+#Productos:
+
+![image](https://github.com/user-attachments/assets/33c55c41-f26b-4fb7-8087-fc169b7bdb1a)
+
+
+
+📜 Licencia
+
+Este proyecto está bajo la licencia MIT. Puedes modificarlo y distribuirlo libremente.
+
+🤝 Contribuciones
+
+Si deseas contribuir, por favor sigue estos pasos:
+
+Haz un fork del repositorio.
+
+Crea una nueva rama con:
+
+```bash
+git checkout -b feature/nueva-feature
+```
+
+Realiza los cambios y haz un commit:
+
+```bash
+git commit -m "Descripción de cambios".
+```
+
+Sube los cambios con:
+```bash
+git push origin feature/nueva-feature.
+```
+
+Abre un Pull Request en GitHub.
+
+¡Gracias por apoyar este proyecto! 🚀
+##
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
