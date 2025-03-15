@@ -46,30 +46,10 @@ Ejecutar el entorno de desarrollo
 npm run dev  # o yarn dev
 ```
 
-📸 Capturas de Pantalla
-
-Demostracion del proyecto.
-#Pagina Principal:
-
-![image](https://github.com/user-attachments/assets/7d042473-fa68-4bdf-a2d2-e847ab25c158)
-
-#Productos destacados:
-
-![image](https://github.com/user-attachments/assets/f2b7fe44-e0f2-4e88-b45d-c6d917448c5d)
-
-#Productos:
-
-![image](https://github.com/user-attachments/assets/33c55c41-f26b-4fb7-8087-fc169b7bdb1a)
-
-
+📸 Demostracion del Proyecto:
 
 https://github.com/user-attachments/assets/36d8d933-6e35-4ba3-bf64-83b903bd3d43
 
-
-
-📜 Licencia
-
-Este proyecto está bajo la licencia MIT. Puedes modificarlo y distribuirlo libremente.
 
 🤝 Contribuciones
 
