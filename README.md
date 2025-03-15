@@ -63,6 +63,10 @@ Demostracion del proyecto.
 
 
 
+https://github.com/user-attachments/assets/36d8d933-6e35-4ba3-bf64-83b903bd3d43
+
+
+
 📜 Licencia
 
 Este proyecto está bajo la licencia MIT. Puedes modificarlo y distribuirlo libremente.
