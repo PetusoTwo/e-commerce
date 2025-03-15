@@ -34,8 +34,8 @@ E-COMMERCE/
 
 Clonar el repositorio
 ```bash
-git clone https://github.com/PetusoTwo/ecommerce-project.git
-cd ecommerce-project
+git clone https://github.com/PetusoTwo/e-commerce.git
+cd e-commerce
 ```
 
 Instalar dependencias
