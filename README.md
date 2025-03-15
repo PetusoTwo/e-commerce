@@ -10,7 +10,7 @@ TypeScript - Tipado estático para mejorar la mantenibilidad.
 Firebase / Supabase (opcional) - Autenticación y base de datos en la nube (Aún no cuenta con Base de datos).
 
 📂 Estructura del Proyecto
-
+```
 E-COMMERCE/
 │-- public/
 │   ├── favicon.ico
@@ -28,6 +28,7 @@ E-COMMERCE/
 │-- README.md
 │-- package.json
 │-- tsconfig.json
+```
 
 🛠 Instalación y Configuración
 
